@@ -34,32 +34,30 @@ limitations under the License.
 
 <!-- Package usage documentation. -->
 
+<section class="installation">
 
+## Installation
+
+```bash
+npm install @stdlib/math-base-special-clampf
+```
+
+Alternatively,
+
+-   To load the package in a website via a `script` tag without installation and bundlers, use the [ES Module][es-module] available on the [`esm` branch][esm-url].
+-   If you are using Deno, visit the [`deno` branch][deno-url].
+-   For use in Observable, or in browser/node environments, use the [Universal Module Definition (UMD)][umd] build available on the [`umd` branch][umd-url].
+
+The [branches.md][branches-url] file summarizes the available branches and displays a diagram illustrating their relationships.
+
+</section>
 
 <section class="usage">
 
 ## Usage
 
-To use in Observable,
-
 ```javascript
-clampf = require( 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@umd/bundle.js' )
-```
-
-To include the bundle in a webpage,
-
-```html
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@umd/bundle.js"></script>
-```
-
-If no recognized module system is present, access bundle contents via the global scope:
-
-```html
-<script type="text/javascript">
-(function () {
-    window.clampf;
-})();
-</script>
+var clampf = require( '@stdlib/math-base-special-clampf' );
 ```
 
 #### clampf( v, min, max )
@@ -116,14 +114,9 @@ v = clampf( 3.14, 0.0, NaN );
 
 <!-- eslint no-undef: "error" -->
 
-```html
-<!DOCTYPE html>
-<html lang="en">
-<body>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@umd/bundle.js"></script>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@umd/bundle.js"></script>
-<script type="text/javascript">
-(function () {
+```javascript
+var discreteUniform = require( '@stdlib/random-base-discrete-uniform' );
+var clampf = require( '@stdlib/math-base-special-clampf' );
 
 var min;
 var max;
@@ -136,11 +129,6 @@ for ( i = 0; i < 100; i++ ) {
     v = discreteUniform( -20.0, 20.0 );
     console.log( 'clampf(%d,%d,%d) => %d', v, min, max, clampf( v, min, max ) );
 }
-
-})();
-</script>
-</body>
-</html>
 ```
 
 </section>
@@ -149,7 +137,90 @@ for ( i = 0; i < 100; i++ ) {
 
 <!-- C interface documentation. -->
 
+* * *
 
+<section class="c">
+
+## C APIs
+
+<!-- Section to include introductory text. Make sure to keep an empty line after the intro `section` element and another before the `/section` close. -->
+
+<section class="intro">
+
+</section>
+
+<!-- /.intro -->
+
+<!-- C usage documentation. -->
+
+<section class="usage">
+
+### Usage
+
+```c
+#include "stdlib/math/base/special/clampf.h"
+```
+
+#### stdlib_base_clampf( v, min, max )
+
+Restricts a single-precision floating-point number to a specified range.
+
+```c
+float y = stdlib_base_clampf( -3.14f, 0.0f, 5.0f );
+// returns 0.0f
+```
+
+The function accepts the following arguments:
+
+-   **v**: `[in] float` input value.
+-   **min**: `[in] float` minimum value.
+-   **max**: `[in] float` maximum value.
+
+```c
+float stdlib_base_clampf( const float v, const float min, const float max );
+```
+
+</section>
+
+<!-- /.usage -->
+
+<!-- C API usage notes. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
+
+<section class="notes">
+
+</section>
+
+<!-- /.notes -->
+
+<!-- C API usage examples. -->
+
+<section class="examples">
+
+### Examples
+
+```c
+#include "stdlib/math/base/special/clampf.h"
+#include <stdio.h>
+
+int main() {
+    float x[] = { 3.14f, -3.14f, 0.0f, 0.0f/0.0f };
+
+    float y;
+    int i;
+    for ( i = 0; i < 4; i++ ) {
+        y = stdlib_base_clampf( x[ i ], -3.0f, 3.0f );
+        printf( "clamp(%f, %f, %f) = %f\n", x[ i ], -3.0f, 3.0f, y );
+    }
+}
+```
+
+</section>
+
+<!-- /.examples -->
+
+</section>
+
+<!-- /.c -->
 
 <!-- Section to include cited references. If references are included, add a horizontal rule *before* the section. Make sure to keep an empty line after the `section` element and another before the `/section` close. -->
 
@@ -238,12 +309,13 @@ Copyright &copy; 2016-2022. The Stdlib [Authors][stdlib-authors].
 [deno-url]: https://github.com/stdlib-js/math-base-special-clampf/tree/deno
 [umd-url]: https://github.com/stdlib-js/math-base-special-clampf/tree/umd
 [esm-url]: https://github.com/stdlib-js/math-base-special-clampf/tree/esm
+[branches-url]: https://github.com/stdlib-js/math-base-special-clampf/blob/main/branches.md
 
 [stdlib-license]: https://raw.githubusercontent.com/stdlib-js/math-base-special-clampf/main/LICENSE
 
 <!-- <related-links> -->
 
-[@stdlib/math/base/special/clamp]: https://github.com/stdlib-js/math-base-special-clamp/tree/umd
+[@stdlib/math/base/special/clamp]: https://github.com/stdlib-js/math-base-special-clamp
 
 <!-- </related-links> -->
 
