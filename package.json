@@ -43,7 +43,8 @@
     "@stdlib/math-base-assert-is-nanf": "^0.1.0",
     "@stdlib/math-base-assert-is-negative-zerof": "^0.1.0",
     "@stdlib/math-base-napi-ternary": "^0.1.0",
-    "@stdlib/utils-library-manifest": "^0.1.0"
+    "@stdlib/utils-library-manifest": "^0.1.0",
+    "@stdlib/error-tools-fmtprodmsg": "^0.1.0"
   },
   "devDependencies": {
     "@stdlib/bench": "^0.1.0",
