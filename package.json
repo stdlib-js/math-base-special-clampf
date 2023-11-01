@@ -47,7 +47,7 @@
   },
   "devDependencies": {
     "@stdlib/bench": "^0.1.0",
-    "@stdlib/math-base-assert-is-positive-zerof": "^0.1.0",
+    "@stdlib/math-base-assert-is-positive-zerof": "^0.1.1",
     "@stdlib/random-base-discrete-uniform": "^0.1.0",
     "@stdlib/random-base-randu": "^0.1.0",
     "@stdlib/utils-try-require": "^0.1.1",
