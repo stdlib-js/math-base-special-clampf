@@ -1,6 +1,6 @@
 {
   "name": "@stdlib/math-base-special-clampf",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "Restrict a single-precision floating-point number to a specified range.",
   "license": "Apache-2.0",
   "author": {
@@ -40,16 +40,16 @@
     "url": "https://github.com/stdlib-js/stdlib/issues"
   },
   "dependencies": {
-    "@stdlib/math-base-assert-is-nanf": "^0.1.1",
-    "@stdlib/math-base-assert-is-negative-zerof": "^0.1.1",
-    "@stdlib/math-base-napi-ternary": "^0.1.1",
-    "@stdlib/utils-library-manifest": "^0.1.1"
+    "@stdlib/math-base-assert-is-nanf": "^0.2.0",
+    "@stdlib/math-base-assert-is-negative-zerof": "^0.2.0",
+    "@stdlib/math-base-napi-ternary": "^0.2.0",
+    "@stdlib/utils-library-manifest": "^0.2.0"
   },
   "devDependencies": {
     "@stdlib/math-base-assert-is-positive-zerof": "^0.1.1",
     "@stdlib/random-base-discrete-uniform": "^0.1.0",
     "@stdlib/random-base-randu": "^0.1.0",
-    "@stdlib/utils-try-require": "^0.1.1",
+    "@stdlib/utils-try-require": "^0.2.0",
     "tape": "git+https://github.com/kgryte/tape.git#fix/globby",
     "istanbul": "^0.4.1",
     "tap-min": "git+https://github.com/Planeshifter/tap-min.git",
