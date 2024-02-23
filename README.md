@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@deno/mod.js';
+import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@v0.2.1-deno/mod.js';
 ```
 
 #### clampf( v, min, max )
@@ -111,7 +111,7 @@ v = clampf( 3.14, 0.0, NaN );
 
 ```javascript
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-base-discrete-uniform@deno/mod.js';
-import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@deno/mod.js';
+import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@v0.2.1-deno/mod.js';
 
 var min;
 var max;
