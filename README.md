@@ -52,6 +52,11 @@ limitations under the License.
 ## Usage
 
 ```javascript
+import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@esm/index.mjs';
+```
+The previous example will load the latest bundled code from the esm branch. Alternatively, you may load a specific version by loading the file from one of the [tagged bundles](https://github.com/stdlib-js/math-base-special-clampf/tags). For example,
+
+```javascript
 import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@v0.2.3-esm/index.mjs';
 ```
 
@@ -117,7 +122,7 @@ v = clampf( 3.14, 0.0, NaN );
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@v0.2.3-esm/index.mjs';
+import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@esm/index.mjs';
 
 var opts = {
     'dtype': 'float32'
