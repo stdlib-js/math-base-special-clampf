@@ -52,7 +52,7 @@ limitations under the License.
 ## Usage
 
 ```javascript
-import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@esm/index.mjs';
+import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@v0.2.3-esm/index.mjs';
 ```
 
 #### clampf( v, min, max )
@@ -117,7 +117,7 @@ v = clampf( 3.14, 0.0, NaN );
 
 import discreteUniform from 'https://cdn.jsdelivr.net/gh/stdlib-js/random-array-discrete-uniform@esm/index.mjs';
 import logEachMap from 'https://cdn.jsdelivr.net/gh/stdlib-js/console-log-each-map@esm/index.mjs';
-import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@esm/index.mjs';
+import clampf from 'https://cdn.jsdelivr.net/gh/stdlib-js/math-base-special-clampf@v0.2.3-esm/index.mjs';
 
 var opts = {
     'dtype': 'float32'
