@@ -46,7 +46,7 @@
     "@stdlib/utils-library-manifest": "^0.2.4"
   },
   "devDependencies": {
-    "@stdlib/console-log-each-map": "^0.1.1",
+    "@stdlib/console-log-each-map": "^0.1.2",
     "@stdlib/math-base-assert-is-positive-zerof": "^0.1.4",
     "@stdlib/random-array-discrete-uniform": "^0.2.2",
     "@stdlib/random-array-uniform": "^0.2.2",
